@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Furnished student rooms for rent next to California State University, San Bernardino. Utilities included, walking distance to campus.">
+    <title>Rooms for Rent next to CSUSB</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Rooms for Rent next to CSUSB</h1>
+        <p>
+          Clean, quiet, professionally managed homes for students at
+          California State University, San Bernardino.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="gallery" id="gallery" aria-label="Property photo gallery">
+            <div class="gallery-viewport">
+              <figure class="gallery-slide active">
+                <img src="images/p1.webp" alt="Shared kitchen and dining area">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p2.webp" alt="Bedroom view">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p3.webp" alt="Living space">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p4.webp" alt="Bedroom with furnishings">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p5.webp" alt="Bathroom">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p6.webp" alt="Kitchen area">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p7.webp" alt="Exterior of home">
+              </figure>
+              <figure class="gallery-slide">
+                <img src="images/p8.webp" alt="Neighborhood near campus">
+              </figure>
+            </div>
+            <div class="gallery-controls">
+              <button class="gallery-btn" type="button" id="gallery-prev" aria-label="Previous photo">&#8249;</button>
+              <div class="gallery-dots" id="gallery-dots" aria-hidden="true"></div>
+              <button class="gallery-btn" type="button" id="gallery-next" aria-label="Next photo">&#8250;</button>
+            </div>
+          </div>
+
+          <div class="highlights">
+            <article class="highlight-card">
+              <h3>Steps from campus</h3>
+              <p>Grand homes in a very short walking distance to CSUSB.</p>
+            </article>
+            <article class="highlight-card">
+              <h3>International community</h3>
+              <p>Welcoming atmosphere with students from around the world.</p>
+            </article>
+            <article class="highlight-card">
+              <h3>Utilities included</h3>
+              <p>Save $50 to $100+ each month with rent that covers utilities.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="prose">
+            <h2 class="section-title">A home built for studying</h2>
+            <p>
+              Whether you are living away from home for the first time, coming from
+              another country to attend CSUSB, or completing the remaining years of
+              your degree, you will find a clean, quiet, safe, and professionally
+              managed home where you can focus on your studies.
+            </p>
+            <p>
+              Enjoy the convenience of almost on-campus living. Our spacious homes are
+              located right next to CSUSB. You will also save money on rent while
+              enjoying a larger, more comfortable room than most campus dorms.
+            </p>
+            <p>
+              As an experienced real estate professional serving the California State
+              University, San Bernardino University Park community for more than 15
+              years, I have had the privilege of hosting students from United States, China, 
+              Germany, Ghana, India, Indonesia, Japan, Korea, Macedonia, Mexico, Mongolia, 
+              Saudi Arabia, Thailand, Turkey, and Vietnam. Great learning environment.
+            </p>
+          </div>
+
+          <aside>
+            <div class="pricing-box">
+              <p class="price">From $750 / month</p>
+              <ul>
+                <li>Utilities included</li>
+                <li>Clean, air conditioned</li>
+                <li>Furnished or unfurnished rooms</li>
+                <li>Shared bathrooms</li>
+                <li>Shared kitchen with oven, microwave, stove, and refrigerator</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2 class="section-title">Location</h2>
+            <p class="section-lead">
+              Right next to campus on Ash St — walk to class without paying for campus parking.
+            </p>
+          </div>
+          <div class="location-card">
+            <a href="https://maps.google.com/maps?z=12&amp;t=m&amp;q=loc:34.1835+-117.33098">
+              <img src="images/map.jpg" alt="Map showing rental location next to CSUSB">
+            </a>
+            <p class="location-caption">
+              Tap the map to open directions in Google Maps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <p>Contact Fay for availability and to schedule a visit.</p>
+          <a class="contact-phone" href="tel:909-380-6577">(909) 380-6577</a>
+          <p>Voice and text</p>
+          <div class="qr-wrap">
+            <img src="images/qr-code.png" alt="QR code to contact Fay">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Student room rentals near California State University, San Bernardino</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var slides = Array.prototype.slice.call(document.querySelectorAll(".gallery-slide"));
+        var dotsContainer = document.getElementById("gallery-dots");
+        var current = 0;
+
+        function renderDots() {
+          dotsContainer.innerHTML = "";
+          slides.forEach(function (_, index) {
+            var dot = document.createElement("button");
+            dot.type = "button";
+            dot.className = "gallery-dot" + (index === current ? " active" : "");
+            dot.setAttribute("aria-label", "Show photo " + (index + 1));
+            dot.addEventListener("click", function () {
+              showSlide(index);
+            });
+            dotsContainer.appendChild(dot);
+          });
+        }
+
+        function showSlide(index) {
+          current = (index + slides.length) % slides.length;
+          slides.forEach(function (slide, slideIndex) {
+            slide.classList.toggle("active", slideIndex === current);
+          });
+          Array.prototype.forEach.call(dotsContainer.children, function (dot, dotIndex) {
+            dot.classList.toggle("active", dotIndex === current);
+          });
+        }
+
+        document.getElementById("gallery-prev").addEventListener("click", function () {
+          showSlide(current - 1);
+        });
+
+        document.getElementById("gallery-next").addEventListener("click", function () {
+          showSlide(current + 1);
+        });
+
+        renderDots();
+      })();
+    </script>
+  </body>
+</html>

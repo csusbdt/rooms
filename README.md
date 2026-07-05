@@ -1,10 +1,7 @@
 # Rooms near CSUSB
 
-To open project in browser (without runnig a server) run the following from powershell:
+To open the site in a browser (without running a server), run the following from PowerShell:
 
-
-
-Start-Process "C:\Users\csusb\Desktop\0\repos\rooms\docs\index.html"
-
-
-
+```powershell
+Start-Process "C:\Users\csusb\Desktop\0\repos\rooms2\index.html"
+```
