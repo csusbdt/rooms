@@ -11,7 +11,8 @@
   --color-muted: #52606d;
   --color-accent: #0f766e;
   --color-accent-dark: #0b5c56;
-  --color-header: #111827;
+  /* --color-header: #111827; */
+  --color-header: #2D9289;
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
   --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.12);
   --radius: 16px;
@@ -52,9 +53,11 @@ a:hover {
 .site-header {
   /*
   background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-  */
   background: linear-gradient(135deg, #81D8D0 0%, #008080 100%);
   background: linear-gradient(135deg, #008080 0%, #17cfc8 100%);
+  background: linear-gradient(135deg, #4CC8BC 0%, #81D8D0 100%);
+  */
+  background: var(--color-header);
   color: #f9fafb;
   padding: 3rem 0 2.5rem;
   text-align: center;
