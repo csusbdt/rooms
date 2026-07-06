@@ -54,6 +54,7 @@ a:hover {
   background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
   */
   background: linear-gradient(135deg, #81D8D0 0%, #008080 100%);
+  background: linear-gradient(135deg, #008080 0%, #17cfc8 100%);
   color: #f9fafb;
   padding: 3rem 0 2.5rem;
   text-align: center;
