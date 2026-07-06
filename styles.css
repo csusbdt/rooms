@@ -241,10 +241,8 @@ a:hover {
 
 .pricing-box {
   /* background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); */
-  background: linear-gradient(135deg, #7ef1ed  0%, #a8f5f3 100%);
-  border: 1px solid #a7f3d0;
-  border: 1px solid #17cfc8;
-  /* border: 1px solid #a8f5f3; */
+  background: linear-gradient(135deg, #C8EEEA  0%, #D4F2EF 100%);
+  border: 1px solid var(--color-header);
   border-radius: var(--radius);
   padding: 1.5rem;
 }
