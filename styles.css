@@ -309,6 +309,20 @@ a:hover {
   color: #ffffff;
 }
 
+.contact-email {
+  display: block;
+  margin: -1.0rem 0 2.5rem 0;
+  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-weight: 700;
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: #ffffff;
+}
+
 .qr-wrap {
   display: inline-block;
   background: #ffffff;
