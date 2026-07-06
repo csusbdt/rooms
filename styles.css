@@ -12,7 +12,8 @@
   --color-accent: #0f766e;
   --color-accent-dark: #0b5c56;
   --color-header: #81d8d0;
-  --color-header-contrast: #d88189;
+  --color-price-background: #F0B27A;
+  --color-price-text: #ffffff;
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
   --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.12);
   --radius: 16px;
@@ -260,8 +261,7 @@ a:hover {
 }
 
 .pricing-box {
-  background: var(--color-header-contrast);
-  background: #f55a56;
+  background: var(--color-price-background);
   border: 1px solid var(--color-muted);
   border-radius: var(--radius);
   padding: 1.5rem;
@@ -280,8 +280,7 @@ a:hover {
   margin: 0;
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--color-accent-dark);
-  color: #821b0c;
+/*  color: var(--color-price-text); */
 }
 
 .contact-section {
