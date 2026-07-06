@@ -11,8 +11,8 @@
   --color-muted: #52606d;
   --color-accent: #0f766e;
   --color-accent-dark: #0b5c56;
-  /* --color-header: #111827; */
-  --color-header: #2D9289;
+  /* --color-header: #111827; #2D9289 */
+  --color-header: #17cfc8;
   --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
   --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.12);
   --radius: 16px;
@@ -58,7 +58,9 @@ a:hover {
   background: linear-gradient(135deg, #4CC8BC 0%, #81D8D0 100%);
   */
   background: var(--color-header);
-  color: #f9fafb;
+/*  color: #f9fafb; */
+  color: var(--color-muted)
+
   padding: 3rem 0 2.5rem;
   text-align: center;
 }
@@ -74,6 +76,8 @@ a:hover {
   margin: 0 auto;
   max-width: 36rem;
   color: #d1d5db;
+  color: var(--color-muted)
+
   font-size: 1.05rem;
 }
 
@@ -242,6 +246,7 @@ a:hover {
 .pricing-box {
   /* background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); */
   background: linear-gradient(135deg, #C8EEEA  0%, #D4F2EF 100%);
+  background: var(--color-header);
   border: 1px solid var(--color-header);
   border-radius: var(--radius);
   padding: 1.5rem;
